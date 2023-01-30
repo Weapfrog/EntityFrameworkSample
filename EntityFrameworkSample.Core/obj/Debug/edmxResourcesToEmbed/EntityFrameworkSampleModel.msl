@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CollegeDatabaseModelStoreContainer" CdmEntityContainer="CollegeDatabaseEntities">
+    <EntitySetMapping Name="Grades">
+      <EntityTypeMapping TypeName="CollegeDatabaseModel.Grades">
+        <MappingFragment StoreEntitySet="Grades">
+          <ScalarProperty Name="GradeID" ColumnName="GradeID" />
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="LectureID" ColumnName="LectureID" />
+          <ScalarProperty Name="Grade1" ColumnName="Grade1" />
+          <ScalarProperty Name="Grade2" ColumnName="Grade2" />
+          <ScalarProperty Name="Average" ColumnName="Average" />
+          <ScalarProperty Name="StudentState" ColumnName="StudentState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lectures">
+      <EntityTypeMapping TypeName="CollegeDatabaseModel.Lectures">
+        <MappingFragment StoreEntitySet="Lectures">
+          <ScalarProperty Name="LectureID" ColumnName="LectureID" />
+          <ScalarProperty Name="LectureName" ColumnName="LectureName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="CollegeDatabaseModel.Students">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentSurname" ColumnName="StudentSurname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
